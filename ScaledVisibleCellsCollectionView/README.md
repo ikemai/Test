@@ -8,18 +8,18 @@
 DynamicBlurView is a dynamic and high performance UIView subclass for Blur.
 
 ## Demo
-* horizontal_center
 ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/horizontal_center.gif)
-* horizontal_left
+* horizontal_center
 ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/horizontal_left.gif)
-* horizontal_right
+* horizontal_left
 ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/horizontal_right.gif)
-* vertical_center
+* horizontal_right
 ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/vertical_center.gif)
-* vertical_top
+* vertical_center
 ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/vertical_top.gif)
-* vertical_bottom
+* vertical_top
 ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/vertical_bottom.gif)
+* vertical_bottom
 
 ## How to Install DynamicBlurView
 
@@ -30,7 +30,7 @@ DynamicBlurView is a dynamic and high performance UIView subclass for Blur.
 Add the following to your `Podfile`:
 
 ```Ruby
-pod "DynamicBlurView"
+pod "ScaledVisibleCellsCollectionView"
 use_frameworks!
 ```
 Note: the `use_frameworks!` is required for pods made in Swift.
@@ -40,7 +40,7 @@ Note: the `use_frameworks!` is required for pods made in Swift.
 Add the following to your `Cartfile`:
 
 ```Ruby
-github "KyoheiG3/DynamicBlurView"
+github "ikemai/ScaledVisibleCellsCollectionView"
 ```
 
 
@@ -64,7 +64,7 @@ collectionView.setScaledDesginParam(scaledPattern: .VerticalCenter, maxScale: 1.
 view.addSubview(collectionView)
 ```
 
-* Set scale(example: scrollView delegate)
+* Set scale
 
 ```swift
 func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -73,6 +73,13 @@ func scrollViewDidScroll(scrollView: UIScrollView) {
 ```
 
 ### Variable
+
+
+* Set Scroll direction & position is the most large cell
+
+```swift
+private var scaledPattern: SC_ScaledPattern = .VerticalCenter
+```
 
 * Set Scale
 
@@ -88,22 +95,16 @@ private var maxAlpha: CGFloat = 1.0
 private var minAlpha: CGFloat = 0.5
 ```
 
-* Set Scroll direction & position at biggest scalling cell
-
-```swift
-private var scaledPattern: SC_ScaledPattern = .VerticalCenter
-```
-
 
 ### Function
 
-* Set Property (* Please always set)
+* Set property ( * Please always set )
 
 ```swift
 func setScaledDesginParam(scaledPattern pattern: SC_ScaledPattern, maxScale: CGFloat, minScale: CGFloat, maxAlpha: CGFloat, minAlpha: CGFloat)
 ```
 
-* Set Scale for visible cells (* Please call at any time)
+* Set scale for visible cells ( * Please call at any time )
 
 ```swift
 func scaledVisibleCells()
