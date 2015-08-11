@@ -9,10 +9,10 @@ DynamicBlurView is a dynamic and high performance UIView subclass for Blur.
 
 ## Demo
 
-### Horizontal ( center / right / left)
+### Horizontal ( center / right / left )
 ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/horizontal_center.gif) ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/horizontal_left.gif) ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/horizontal_right.gif)
 
-### Vertical ( center / top / bottom)
+### Vertical ( center / top / bottom )
 ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/vertical_center.gif) ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/vertical_top.gif) ![Gif](https://github.com/ikemai/assets/blob/master/ScaledVisibleCellsCollectionView/vertical_bottom.gif)
 
 ## How to Install DynamicBlurView
@@ -73,6 +73,17 @@ func scrollViewDidScroll(scrollView: UIScrollView) {
 
 ```swift
 private var scaledPattern: SC_ScaledPattern = .VerticalCenter
+```
+
+```swift
+public enum SC_ScaledPattern {
+case HorizontalCenter
+case HorizontalLeft
+case HorizontalRight
+case VerticalCenter
+case VerticalBottom
+case VerticalTop
+}
 ```
 
 * Set Scale
