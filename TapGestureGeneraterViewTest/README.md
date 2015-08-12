@@ -61,27 +61,21 @@ gestureView.reset()
 // Tap
 gestureView.setTapGesture({[weak self] tapGestureView in
   if let me = self {
-    me.gestureView.backgroundColor = me.tapColor
     me.labelView.text = "Tap Gesture"
-    me.summaryLabelView.text = ""
   }
 })
 
 // Double tap
 gestureView.setDoubleTapGesture({[weak self] tapGestureView in
   if let me = self {
-    me.gestureView.backgroundColor = me.tapColor
     me.labelView.text = "Double Tap Gesture"
-    me.summaryLabelView.text = ""
   }
 })
 
 // Triple tap
 gestureView.setTripleTapGesture({[weak self] tapGestureView in
   if let me = self {
-    me.gestureView.backgroundColor = me.tapColor
     me.labelView.text = "Triple Tap Gesture"
-    me.summaryLabelView.text = ""
   }
 })
 ```
@@ -92,7 +86,6 @@ gestureView.setTripleTapGesture({[weak self] tapGestureView in
 // Touches began
 gestureView.setTouchesBegan({[weak self] tapGestureView, point in
   if let me = self {
-    me.gestureView.backgroundColor = me.touchColor
     me.labelView.text = "Touches Began"
     me.summaryLabelView.text = "point = \(point)"
   }
@@ -100,7 +93,6 @@ gestureView.setTouchesBegan({[weak self] tapGestureView, point in
 // Touches cancelled
 gestureView.setTouchesCancelled({[weak self] tapGestureView, point in
   if let me = self {
-    me.gestureView.backgroundColor = me.touchColor
     me.labelView.text = "Touches Cancelled"
     me.summaryLabelView.text = "point = \(point)"
   }
@@ -108,7 +100,6 @@ gestureView.setTouchesCancelled({[weak self] tapGestureView, point in
 // Touches ended
 gestureView.setTouchesEnded({[weak self] tapGestureView, point in
   if let me = self {
-    me.gestureView.backgroundColor = me.touchColor
     me.labelView.text = "Touches Ended"
     me.summaryLabelView.text = "point = \(point)"
   }
@@ -116,7 +107,6 @@ gestureView.setTouchesEnded({[weak self] tapGestureView, point in
 // Dragging
 gestureView.setDraggingGesture({[weak self] tapGestureView, deltaPoint in
   if let me = self {
-    me.gestureView.backgroundColor = me.touchColor
     me.labelView.text = "Drraging"
     me.summaryLabelView.text = "deltaPoint = \(deltaPoint)"
   }
@@ -129,7 +119,6 @@ gestureView.setDraggingGesture({[weak self] tapGestureView, deltaPoint in
 // Pinching
 gestureView.setPinchingGesture({[weak self] tapGestureView, sender in
   if let me = self {
-    me.gestureView.backgroundColor = me.pinchColor
     me.labelView.text = "Pinching Gesture"
     me.summaryLabelView.text = "sender = \(sender)"
   }
@@ -137,7 +126,6 @@ gestureView.setPinchingGesture({[weak self] tapGestureView, sender in
 // Pinch in
 gestureView.setPinchInGesture({[weak self] tapGestureView, sender in
   if let me = self {
-    me.gestureView.backgroundColor = me.pinchColor
     me.labelView.text = "Pinch In Gesture"
     me.summaryLabelView.text = "sender = \(sender)"
   }
@@ -145,7 +133,6 @@ gestureView.setPinchInGesture({[weak self] tapGestureView, sender in
 // Pinch out
 gestureView.setPinchOutGesture({[weak self] tapGestureView, sender in
   if let me = self {
-    me.gestureView.backgroundColor = me.pinchColor
     me.labelView.text = "Pinch Out Gesture"
     me.summaryLabelView.text = "sender = \(sender)"
   }
@@ -158,7 +145,6 @@ gestureView.setPinchOutGesture({[weak self] tapGestureView, sender in
 // Swip to left
 gestureView.setSwipToLeftGesture({[weak self] tapGestureView, gesture in
   if let me = self {
-    me.gestureView.backgroundColor = me.swipColor
     me.labelView.text = "Swip To Left"
     me.summaryLabelView.text = "gesture = \(gesture)"
   }
@@ -166,7 +152,6 @@ gestureView.setSwipToLeftGesture({[weak self] tapGestureView, gesture in
 // Swip to right
 gestureView.setSwipToRightGesture({[weak self] tapGestureView, gesture in
   if let me = self {
-    me.gestureView.backgroundColor = me.swipColor
     me.labelView.text = "Swip To Right"
     me.summaryLabelView.text = "gesture = \(gesture)"
   }
@@ -174,7 +159,6 @@ gestureView.setSwipToRightGesture({[weak self] tapGestureView, gesture in
 // Swip to top
 gestureView.setSwipToUpGesture({[weak self] tapGestureView, gesture in
   if let me = self {
-    me.gestureView.backgroundColor = me.swipColor
     me.labelView.text = "Swip To Up"
     me.summaryLabelView.text = "gesture = \(gesture)"
   }
@@ -182,7 +166,6 @@ gestureView.setSwipToUpGesture({[weak self] tapGestureView, gesture in
 // Swip to down
 gestureView.setSwipToDownGesture({[weak self] tapGestureView, gesture in
   if let me = self {
-    me.gestureView.backgroundColor = me.swipColor
     me.labelView.text = "Swip To Down"
     me.summaryLabelView.text = "gesture = \(gesture)"
   }
