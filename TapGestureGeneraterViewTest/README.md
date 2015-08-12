@@ -60,29 +60,29 @@ gestureView.reset()
 ```swift
 // Tap
 gestureView.setTapGesture({[weak self] tapGestureView in
-if let me = self {
-me.gestureView.backgroundColor = me.tapColor
-me.labelView.text = "Tap Gesture"
-me.summaryLabelView.text = ""
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.tapColor
+    me.labelView.text = "Tap Gesture"
+    me.summaryLabelView.text = ""
+  }
 })
 
 // Double tap
 gestureView.setDoubleTapGesture({[weak self] tapGestureView in
-if let me = self {
-me.gestureView.backgroundColor = me.tapColor
-me.labelView.text = "Double Tap Gesture"
-me.summaryLabelView.text = ""
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.tapColor
+    me.labelView.text = "Double Tap Gesture"
+    me.summaryLabelView.text = ""
+  }
 })
 
 // Triple tap
 gestureView.setTripleTapGesture({[weak self] tapGestureView in
-if let me = self {
-me.gestureView.backgroundColor = me.tapColor
-me.labelView.text = "Triple Tap Gesture"
-me.summaryLabelView.text = ""
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.tapColor
+    me.labelView.text = "Triple Tap Gesture"
+    me.summaryLabelView.text = ""
+  }
 })
 ```
 
@@ -91,35 +91,35 @@ me.summaryLabelView.text = ""
 ```swift
 // Touches began
 gestureView.setTouchesBegan({[weak self] tapGestureView, point in
-if let me = self {
-me.gestureView.backgroundColor = me.touchColor
-me.labelView.text = "Touches Began"
-me.summaryLabelView.text = "point = \(point)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.touchColor
+    me.labelView.text = "Touches Began"
+    me.summaryLabelView.text = "point = \(point)"
+  }
 })
 // Touches cancelled
 gestureView.setTouchesCancelled({[weak self] tapGestureView, point in
-if let me = self {
-me.gestureView.backgroundColor = me.touchColor
-me.labelView.text = "Touches Cancelled"
-me.summaryLabelView.text = "point = \(point)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.touchColor
+    me.labelView.text = "Touches Cancelled"
+    me.summaryLabelView.text = "point = \(point)"
+  }
 })
 // Touches ended
 gestureView.setTouchesEnded({[weak self] tapGestureView, point in
-if let me = self {
-me.gestureView.backgroundColor = me.touchColor
-me.labelView.text = "Touches Ended"
-me.summaryLabelView.text = "point = \(point)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.touchColor
+    me.labelView.text = "Touches Ended"
+    me.summaryLabelView.text = "point = \(point)"
+  }
 })
 // Dragging
 gestureView.setDraggingGesture({[weak self] tapGestureView, deltaPoint in
-if let me = self {
-me.gestureView.backgroundColor = me.touchColor
-me.labelView.text = "Drraging"
-me.summaryLabelView.text = "deltaPoint = \(deltaPoint)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.touchColor
+    me.labelView.text = "Drraging"
+    me.summaryLabelView.text = "deltaPoint = \(deltaPoint)"
+  }
 })
 ```
 
@@ -128,27 +128,27 @@ me.summaryLabelView.text = "deltaPoint = \(deltaPoint)"
 ```swift
 // Pinching
 gestureView.setPinchingGesture({[weak self] tapGestureView, sender in
-if let me = self {
-me.gestureView.backgroundColor = me.pinchColor
-me.labelView.text = "Pinching Gesture"
-me.summaryLabelView.text = "sender = \(sender)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.pinchColor
+    me.labelView.text = "Pinching Gesture"
+    me.summaryLabelView.text = "sender = \(sender)"
+  }
 })
 // Pinch in
 gestureView.setPinchInGesture({[weak self] tapGestureView, sender in
-if let me = self {
-me.gestureView.backgroundColor = me.pinchColor
-me.labelView.text = "Pinch In Gesture"
-me.summaryLabelView.text = "sender = \(sender)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.pinchColor
+    me.labelView.text = "Pinch In Gesture"
+    me.summaryLabelView.text = "sender = \(sender)"
+  }
 })
 // Pinch out
 gestureView.setPinchOutGesture({[weak self] tapGestureView, sender in
-if let me = self {
-me.gestureView.backgroundColor = me.pinchColor
-me.labelView.text = "Pinch Out Gesture"
-me.summaryLabelView.text = "sender = \(sender)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.pinchColor
+    me.labelView.text = "Pinch Out Gesture"
+    me.summaryLabelView.text = "sender = \(sender)"
+  }
 })
 ```
 
@@ -157,35 +157,35 @@ me.summaryLabelView.text = "sender = \(sender)"
 ```swift
 // Swip to left
 gestureView.setSwipToLeftGesture({[weak self] tapGestureView, gesture in
-if let me = self {
-me.gestureView.backgroundColor = me.swipColor
-me.labelView.text = "Swip To Left"
-me.summaryLabelView.text = "gesture = \(gesture)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.swipColor
+    me.labelView.text = "Swip To Left"
+    me.summaryLabelView.text = "gesture = \(gesture)"
+  }
 })
 // Swip to right
 gestureView.setSwipToRightGesture({[weak self] tapGestureView, gesture in
-if let me = self {
-me.gestureView.backgroundColor = me.swipColor
-me.labelView.text = "Swip To Right"
-me.summaryLabelView.text = "gesture = \(gesture)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.swipColor
+    me.labelView.text = "Swip To Right"
+    me.summaryLabelView.text = "gesture = \(gesture)"
+  }
 })
 // Swip to top
 gestureView.setSwipToUpGesture({[weak self] tapGestureView, gesture in
-if let me = self {
-me.gestureView.backgroundColor = me.swipColor
-me.labelView.text = "Swip To Up"
-me.summaryLabelView.text = "gesture = \(gesture)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.swipColor
+    me.labelView.text = "Swip To Up"
+    me.summaryLabelView.text = "gesture = \(gesture)"
+  }
 })
 // Swip to down
 gestureView.setSwipToDownGesture({[weak self] tapGestureView, gesture in
-if let me = self {
-me.gestureView.backgroundColor = me.swipColor
-me.labelView.text = "Swip To Down"
-me.summaryLabelView.text = "gesture = \(gesture)"
-}
+  if let me = self {
+    me.gestureView.backgroundColor = me.swipColor
+    me.labelView.text = "Swip To Down"
+    me.summaryLabelView.text = "gesture = \(gesture)"
+  }
 })
 ```
 
@@ -194,7 +194,7 @@ me.summaryLabelView.text = "gesture = \(gesture)"
 * Remove all seted gestures
 
 ```swift
-reset()
+func reset()
 ```
 
 * Set tap gesture
